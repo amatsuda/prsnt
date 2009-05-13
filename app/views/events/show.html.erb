@@ -18,6 +18,6 @@
   <%=h @event.end_at %>
 </p>
 
-
+<%= link_to '応募する', new_event_entry_path(@event) %> |
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>
