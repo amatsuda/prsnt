@@ -1,6 +1,6 @@
 <h1>Editing entry</h1>
 
-<% form_for(@entry) do |f| %>
+<% form_for [@event, @entry] do |f| %>
   <%= f.error_messages %>
 
   <p>
@@ -28,5 +28,5 @@
   </p>
 <% end %>
 
-<%= link_to 'Show', @entry %> |
-<%= link_to 'Back', entries_path %>
+<%= link_to 'Show', [@event, @entry] %> |
+<%= link_to 'Back', event_entries_path(@event) %>
