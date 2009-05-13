@@ -1,0 +1,28 @@
+<p>
+  <b>Handle name:</b>
+  <%=h @entry.handle_name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @entry.email %>
+</p>
+
+<p>
+  <b>Present:</b>
+  <%=h @entry.present %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%=h @entry.comment %>
+</p>
+
+<p>
+  <b>Entered at:</b>
+  <%=h @entry.entered_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_entry_path(@entry) %> |
+<%= link_to 'Back', entries_path %>
