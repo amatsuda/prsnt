@@ -1,9 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :entries
 
-  map.resources :presents
-
-  map.resources :events
+  map.resources :events do |event|
+    event.resources :presents
+    event.resources :entries
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
 
