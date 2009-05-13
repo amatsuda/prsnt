@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @present.name %>
+</p>
+
+<p>
+  <b>Event:</b>
+  <%=h @present.event %>
+</p>
+
+<p>
+  <b>Sponsor:</b>
+  <%=h @present.sponsor %>
+</p>
+
+
+<%= link_to 'Edit', edit_present_path(@present) %> |
+<%= link_to 'Back', presents_path %>
